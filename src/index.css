@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #ffffff;
+  color: #1d1d1f;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .btn-base {
+    @apply inline-flex items-center justify-center font-medium rounded-full transition-all duration-200 shadow-sm hover:shadow-md;
+  }
+}
